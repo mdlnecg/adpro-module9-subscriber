@@ -1,4 +1,4 @@
-# Tutorial 9 Pemrograman Lanjut: Subscriber
+![image](https://github.com/user-attachments/assets/761b4c58-cdf5-4afa-9b69-1b23ed5916b0)# Tutorial 9 Pemrograman Lanjut: Subscriber
 ### Madeline Clairine Gultom - 2306207846 - ADPRO A
 
 > What is amqp?
@@ -21,3 +21,12 @@ Kali ini, saya mencoba untuk memperlambat proses pada Subscriber dan dapat dilih
 ![image](https://github.com/user-attachments/assets/4b2b07f5-a1dc-4042-ba1c-4d6c5a02a416)
 ![image](https://github.com/user-attachments/assets/c3e43c93-6109-4b01-af2f-7669408e4ddf)
 Dengan membuka lebih dari satu console subscriber, kita dapat melihat bahwa tiap console memproses pesan-pesan yang dikirim. Pada grafik di RabbitMQ juga kita dapat melihat bahwa queued messages yang terdaftar hanya tiga untuk tiga `cargo run` yang saya jalani, hal ini menandakan jika kita membuka banyak Subscriber, maka akan lebih sedikit queued messages yang terdaftar karena masing-masing Subscriber langsung memproses berbagai pesan. Oleh karena itu, tanpa mengubah bagian di kode, kita dapat memperoleh hasil yang lebih maksimal hanya dengan menambah jumlah Subscriber.
+
+
+# BONUS
+## Simulation slow subscriber
+![image](https://github.com/user-attachments/assets/a0f0115e-12e1-4745-bfe1-8d7bab25c51f)
+
+## Running four subscribers
+![image](https://github.com/user-attachments/assets/4a4073b4-34e3-4fb9-ab6b-4724c4e6018b)
+![image](https://github.com/user-attachments/assets/30516706-4ee0-4725-b66c-51958f5dafde)
