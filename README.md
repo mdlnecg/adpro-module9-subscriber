@@ -12,3 +12,7 @@ Hal tersebut adalah format umum untuk terhubung ke Server AMQP (RabbitMQ)
 - guest (kedua): password untuk username tersebut
 - localhost: alamat server RabbitMQ yang ingin dihubungi, di mana program ini mencoba terhubung ke komputer lokal
 - 5672: port default untuk protokol AMQP
+
+## Simulation slow subscriber
+![image](https://github.com/user-attachments/assets/c2ed5e65-7814-42fa-bd2a-0a2d798469ef)
+Kali ini, saya mencoba untuk memperlambat proses pada Subscriber dan dapat dilihat ketika kita menjalani run, maka queued messages akan bertambah sesuai dengan delay yang diberikan. Pada kasus ini, saya menjalani tiga `cargo run` pada Publisher dan kemudian terdapat queued messages sekitar 11 buah pesan.
