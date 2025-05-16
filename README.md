@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/761b4c58-cdf5-4afa-9b69-1b23ed5916b0)# Tutorial 9 Pemrograman Lanjut: Subscriber
+# Tutorial 9 Pemrograman Lanjut: Subscriber
 ### Madeline Clairine Gultom - 2306207846 - ADPRO A
 
 > What is amqp?
