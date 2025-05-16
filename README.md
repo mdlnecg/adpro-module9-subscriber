@@ -16,3 +16,8 @@ Hal tersebut adalah format umum untuk terhubung ke Server AMQP (RabbitMQ)
 ## Simulation slow subscriber
 ![image](https://github.com/user-attachments/assets/c2ed5e65-7814-42fa-bd2a-0a2d798469ef)
 Kali ini, saya mencoba untuk memperlambat proses pada Subscriber dan dapat dilihat ketika kita menjalani run, maka queued messages akan bertambah sesuai dengan delay yang diberikan. Pada kasus ini, saya menjalani tiga `cargo run` pada Publisher dan kemudian terdapat queued messages sekitar 11 buah pesan.
+
+## Reflection and Running at least three subscribers
+![image](https://github.com/user-attachments/assets/4b2b07f5-a1dc-4042-ba1c-4d6c5a02a416)
+![image](https://github.com/user-attachments/assets/c3e43c93-6109-4b01-af2f-7669408e4ddf)
+Dengan membuka lebih dari satu console subscriber, kita dapat melihat bahwa tiap console memproses pesan-pesan yang dikirim. Pada grafik di RabbitMQ juga kita dapat melihat bahwa queued messages yang terdaftar hanya tiga untuk tiga `cargo run` yang saya jalani, hal ini menandakan jika kita membuka banyak Subscriber, maka akan lebih sedikit queued messages yang terdaftar karena masing-masing Subscriber langsung memproses berbagai pesan. Oleh karena itu, tanpa mengubah bagian di kode, kita dapat memperoleh hasil yang lebih maksimal hanya dengan menambah jumlah Subscriber.
